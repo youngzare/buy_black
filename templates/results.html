@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ state }} Black-Owned Businesses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ state }} Black-Owned Businesses</h1>
+    <div class="businesses">
+        {% for business in businesses %}
+            <div class="business">
+                <img src="{{ business['image'] }}" alt="{{ business['name'] }}">
+                <h3>{{ business['name'] }}</h3>
+                <p>{{ business['location'] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
