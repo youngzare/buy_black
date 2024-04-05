@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Yelp API credentials
-API_KEY = 'FzrkBw0LEKgiFfeRhyuj6YOGYgktay3JzRYyRz1nPw5FHNaHRhkIT3FzArQJiA09HrNfAJgR1kjiPQvC8DmQMcCaoPDbn1boeAakGb4HVqAt0a0ka-v3niIa00cQZnYx'
+API_KEY = 'api_key_here'
 
 # Function to fetch black-owned businesses from Yelp API
 def get_black_owned_businesses(location):
